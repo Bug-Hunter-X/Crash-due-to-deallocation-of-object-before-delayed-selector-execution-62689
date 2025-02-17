@@ -1,0 +1,1 @@
+This repository demonstrates a potential crash in Objective-C applications due to improper use of `performSelector:withObject:afterDelay:`. The bug occurs when an object schedules a selector to be performed after a delay, but deallocates before the delay elapses, leading to a crash. The solution involves using a weak reference to the object to prevent this.
